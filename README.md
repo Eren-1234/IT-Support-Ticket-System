@@ -80,6 +80,6 @@ Projeyi test etmek için şu sırayla veri girişi yapılması önerilir:
 
 ## 👨‍💻 Geliştirici
 
-**[Adın Soyadın]**
-* [LinkedIn Profilin](https://linkedin.com/in/profilin)
-* [GitHub Profilin](https://github.com/profilin)
+**[Eren Tarık Kınacı]**
+* [LinkedIn](www.linkedin.com/in/eren-tarık-kınacı-b1b485232)
+* [GitHub](https://github.com/Eren-1234)
