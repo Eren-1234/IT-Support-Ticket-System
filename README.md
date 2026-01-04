@@ -44,8 +44,9 @@ Bootstrap 5 ile geliştirilen responsive tasarım sayesinde tüm cihazlarda düz
 *(Buraya projenin ekran görüntülerini ekleyebilirsin. Örn: Ana Sayfa, Talep Listesi vb.)*
 
 | Ana Sayfa | Talep Listesi |
+
 |-----------|---------------|
-| ![Ana Sayfa](https://via.placeholder.com/400x200?text=Ana+Sayfa+Gorseli) | ![Ticket Listesi](https://via.placeholder.com/400x200?text=Talep+Listesi+Gorseli) |
+| ![Anasayfa](https://github.com/user-attachments/assets/820a8f6a-7d0e-4e97-ae2c-306d99a8a09b) | ![Ticket Listesi](https://via.placeholder.com/400x200?text=Talep+Listesi+Gorseli) |
 
 ---
 
