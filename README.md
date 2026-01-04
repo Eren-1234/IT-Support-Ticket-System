@@ -55,7 +55,7 @@ Projeyi kendi bilgisayarınızda çalıştırmak için şu adımları izleyin:
 
 1.  **Projeyi Klonlayın:**
     ```bash
-    git clone [https://github.com/KULLANICI_ADIN/REPO_ISMI.git](https://github.com/KULLANICI_ADIN/REPO_ISMI.git)
+    git clone [https://github.com/Eren-1234/IT-Support-Ticket-System.git](https://github.com/Eren-1234/IT-Support-Ticket-System.git)
     ```
 2.  **Visual Studio ile Açın:**
     `.sln` uzantılı dosyayı çift tıklayarak açın.
