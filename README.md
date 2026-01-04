@@ -81,5 +81,5 @@ Projeyi test etmek için şu sırayla veri girişi yapılması önerilir:
 ## 👨‍💻 Geliştirici
 
 **[Eren Tarık Kınacı]**
-* [LinkedIn](www.linkedin.com/in/eren-tarık-kınacı-b1b485232)
+* [LinkedIn](https://www.linkedin.com/in/eren-tar%C4%B1k-k%C4%B1nac%C4%B1-b1b485232/)
 * [GitHub](https://github.com/Eren-1234)
