@@ -1,0 +1,61 @@
+﻿@model DestekSistemi.Models.Ticket
+
+@{
+    ViewData["Title"] = "Talep Sil";
+}
+
+<div class="container mt-5">
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">Dikkat!</h4>
+        <p>Bu destek talebini silmek üzeresin. Bu işlem geri alınamaz.</p>
+    </div>
+
+    <div class="card shadow">
+        <div class="card-header bg-danger text-white">
+            <h5 class="mb-0">Silinecek Kayıt Bilgileri</h5>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3 fw-bold">Konu Başlığı:</dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Title)
+                </dd>
+
+                <dt class="col-sm-3 fw-bold">Açıklama:</dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+
+                <dt class="col-sm-3 fw-bold">Durum:</dt>
+                <dd class="col-sm-9">
+                    <span class="badge bg-secondary">@Html.DisplayFor(model => model.Status)</span>
+                </dd>
+
+                <dt class="col-sm-3 fw-bold">Oluşturulma Tarihi:</dt>
+                <dd class="col-sm-9">
+                    @Model.CreatedDate.ToString("dd.MM.yyyy HH:mm")
+                </dd>
+
+                <dt class="col-sm-3 fw-bold">Talep Sahibi:</dt>
+                <dd class="col-sm-9">
+                    @if (Model.User != null)
+                    {
+                        <span class="text-primary fw-bold">
+                            @Html.DisplayFor(model => model.User.FullName)
+                        </span>
+                    }
+                    else
+                    {
+                        <span class="text-muted">Kullanıcı Bulunamadı</span>
+                    }
+                </dd>
+            </dl>
+
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="Id" />
+                <button type="submit" class="btn btn-danger">🗑 Evet, Kaydı Sil</button> |
+                <a asp-action="Index" class="btn btn-outline-secondary">İptal Et</a>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+﻿@model DestekSistemi.Models.Ticket
+
+@{
+    ViewData["Title"] = "Talep Oluştur";
+}
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="card shadow">
+            <div class="card-header bg-warning text-dark">
+                <h4>Yeni Arıza/Talep Kaydı</h4>
+            </div>
+            <div class="card-body">
+                <form asp-action="Create">
+
+                    <div class="mb-3">
+                        <label asp-for="Title" class="form-label">Konu Başlığı</label>
+                        <input asp-for="Title" class="form-control" placeholder="Örn: Yazıcı Çalışmıyor" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Description" class="form-label">Açıklama</label>
+                        <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Status" class="form-label">Durum</label>
+                        <select asp-for="Status" class="form-control">
+                            <option value="Bekliyor">Bekliyor</option>
+                            <option value="İnceleniyor">İnceleniyor</option>
+                            <option value="Çözüldü">Çözüldü</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="UserId" class="form-label">Talep Sahibi</label>
+                        <select asp-for="UserId" class="form-control" asp-items="ViewBag.UserId"></select>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100">Talebi Gönder</button>
+                </form>
+            </div>
+        </div>
+        <div class="text-center mt-2">
+            <a asp-action="Index">Listeye Dön</a>
+        </div>
+    </div>
+</div>

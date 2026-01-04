@@ -1,0 +1,44 @@
+﻿@model DestekSistemi.Models.User
+
+@{
+    ViewData["Title"] = "Yeni Personel Ekle";
+}
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="card shadow">
+            <div class="card-header bg-info text-white">
+                <h4>Yeni Personel Oluştur</h4>
+            </div>
+            <div class="card-body">
+                <form asp-action="Create">
+
+                    <div class="mb-3">
+                        <label asp-for="FullName" class="form-label">Ad Soyad</label>
+                        <input asp-for="FullName" class="form-control" placeholder="Örn: Ahmet Yılmaz" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label">E-Posta Adresi</label>
+                        <input asp-for="Email" class="form-control" type="email" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Password" class="form-label">Şifre</label>
+                        <input asp-for="Password" class="form-control" type="password" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="RoleId" class="form-label">Görevi (Rolü)</label>
+                        <select asp-for="RoleId" class="form-control" asp-items="ViewBag.RoleId"></select>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100">Kaydet</button>
+                </form>
+            </div>
+        </div>
+        <div class="text-center mt-2">
+            <a asp-action="Index">Listeye Dön</a>
+        </div>
+    </div>
+</div>

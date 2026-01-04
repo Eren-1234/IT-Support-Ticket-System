@@ -1,0 +1,35 @@
+﻿@model DestekSistemi.Models.Role
+
+@{
+    ViewData["Title"] = "Yeni Rol Ekle";
+}
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">Yeni Rol Tanımla</h4>
+            </div>
+            <div class="card-body">
+                <form asp-action="Create">
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="RoleName" class="control-label fw-bold">Rol Adı (Örn: Yönetici)</label>
+                        <input asp-for="RoleName" class="form-control" placeholder="Rol adını giriniz..." />
+                        <span asp-validation-for="RoleName" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success w-100">✔ Kaydet ve Oluştur</button>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer text-center">
+                <a asp-action="Index" class="btn btn-link">Listeye Geri Dön</a>
+            </div>
+        </div>
+    </div>
+</div>
+

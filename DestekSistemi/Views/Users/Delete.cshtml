@@ -1,0 +1,51 @@
+﻿@model DestekSistemi.Models.User
+
+@{
+    ViewData["Title"] = "Personel Sil";
+}
+
+<div class="container mt-5">
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">Dikkat!</h4>
+        <p>Bu personeli silmek istediğine emin misin? Bu işlem geri alınamaz.</p>
+    </div>
+
+    <div class="card shadow">
+        <div class="card-header bg-danger text-white">
+            <h5 class="mb-0">Silinecek Personel Bilgileri</h5>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3 fw-bold">Ad Soyad:</dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.FullName)
+                </dd>
+
+                <dt class="col-sm-3 fw-bold">E-Posta:</dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+
+                <dt class="col-sm-3 fw-bold">Görevi (Rolü):</dt>
+                <dd class="col-sm-9">
+                    @if (Model.Role != null)
+                    {
+                        <span class="badge bg-secondary text-white">
+                            @Html.DisplayFor(model => model.Role.RoleName)
+                        </span>
+                    }
+                    else
+                    {
+                        <span class="text-muted">Rol Atanmamış</span>
+                    }
+                </dd>
+            </dl>
+
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="Id" />
+                <button type="submit" class="btn btn-danger">🗑 Evet, Sil</button> |
+                <a asp-action="Index" class="btn btn-outline-secondary">İptal Et</a>
+            </form>
+        </div>
+    </div>
+</div>
