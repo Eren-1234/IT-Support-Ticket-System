@@ -44,7 +44,7 @@ Bootstrap 5 ile geliştirilen responsive tasarım sayesinde tüm cihazlarda düz
 
 
 |-----------|---------------|
-| ![Anasayfa](https://github.com/user-attachments/assets/820a8f6a-7d0e-4e97-ae2c-306d99a8a09b) | ![Roller](https://github.com/user-attachments/assets/4359e278-2e27-4b66-93ba-34afddffdf11) | ![Kullanıcılar](https://github.com/user-attachments/assets/69821dc2-9682-4f35-8991-1f168422f524) | ![Talep](https://github.com/user-attachments/assets/9f055ec2-ca73-407f-bb4e-1e1d880f04b0)
+![Anasayfa](https://github.com/user-attachments/assets/820a8f6a-7d0e-4e97-ae2c-306d99a8a09b)  ![Roller](https://github.com/user-attachments/assets/4359e278-2e27-4b66-93ba-34afddffdf11)  ![Kullanıcılar](https://github.com/user-attachments/assets/69821dc2-9682-4f35-8991-1f168422f524)  ![Talep](https://github.com/user-attachments/assets/9f055ec2-ca73-407f-bb4e-1e1d880f04b0)
 
 
 
