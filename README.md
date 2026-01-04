@@ -40,9 +40,6 @@ Bootstrap 5 ile geliştirilen responsive tasarım sayesinde tüm cihazlarda düz
 ---
 
 ## 📸 Ekran Görüntüleri
-
-*(Buraya projenin ekran görüntülerini ekleyebilirsin. Örn: Ana Sayfa, Talep Listesi vb.)*
-
 | Ana Sayfa | Talep Listesi |
 
 
